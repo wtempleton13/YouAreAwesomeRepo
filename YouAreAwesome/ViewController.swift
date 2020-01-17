@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         formatTextFields()
         print("🏓 viewDidLoad has run!")
+        messageLabel.text = "What's Up Dog?"
     }
     
     func formatTextFields() {
