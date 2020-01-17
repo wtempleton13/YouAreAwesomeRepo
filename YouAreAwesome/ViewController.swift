@@ -9,11 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var showMessageButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        formatTextFields()
+        print("🏓 viewDidLoad has run!")
     }
-
+    
+    func formatTextFields() {
+        messageLabel.textAlignment = .center
+    }
+    
+    @IBAction func showMessageButtonPressed(_ sender: UIButton) {
+        print("showMessageButtonPressed")
+        messageLabel.text = "You Are Awesome!"
+    }
+    
 }
 
